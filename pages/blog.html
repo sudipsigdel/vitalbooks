@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="blog page of VitalBooks">
+		<meta name="keywords" content="Book Store">
+		<meta name="author" content="Sudip Sigdel">
+
+		<title>Blog</title>
+		<!--favicon refers to the image that appers in left of the title-->
+		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+		<style type="text/css">
+			.blog {
+				margin: auto;
+				padding: 20px 0	;
+				width: 60%;
+			}
+
+			.author {
+				display: flex;
+			}
+
+			.author i {
+				padding: 15px;
+			}
+
+			.content h1 {
+				padding: 25px 0 5px 0;
+			}
+
+			.content p {
+				font-size: 18px;
+				text-align: justify;
+				line-height: 30px;
+				font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+			}
+
+			/* Media queries for responsive design */
+			@media only screen and (max-width: 768px) {
+				.blog {
+					margin: auto;
+					width: 90%;
+				}
+			}
+
+			@media only screen and (max-width: 480px) {
+				.blog {
+					margin: auto;
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<!--This division contains logo of the website-->
+				<div>
+					<a href="../index.html">
+						<img class="logo" src="../images/logo.png" width="auto" height="100%">
+					</a>
+				</div>
+
+				<!--This division contains javaScript that displays current date and time-->
+				<div class="date">
+					<i id="date"></i>
+
+					<script src="../js/script.js">
+						display_date();
+					</script>
+				</div>
+
+				<!--Navigation Links-->
+				<div>
+					<ul>
+						<li><a href="../index.html">HOME</a></li>
+						<li><a href="product.html">PRODUCT</a></li>
+						<li><a class="active" href="blog.html">BLOG</a></li>
+						<li><a href="research.html">RESEARCH</a></li>
+						<li><a href="contact.html">CONTACT US</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		
+		<div class="blog">
+			<!--Heading of the blog-->
+			<h1 style="font-size: 35px;">Impact of technology in day to day life</h1>
+
+			<br>
+
+			<img src="../images/blog.webp" width="100%">
+
+			<br><br>
+
+			<!--This division contains the image and details of the author-->
+			<div class="author">
+				<a href="http://www.bio.link/sudip" target="_blank">
+					<img src="../images/me.png" height="50px">
+				</a>
+
+				<i>By Sudip Sigdel <br> 29th March 2022 </i>
+			</div>
+
+			<!--Content of the blog-->
+			<div class="content">
+
+				<h1>Introduction</h1>
+
+				<p>
+					The application of the information and scientific knowledge for the development of devices and equipment
+					that can be used in various aspect is known as technology. We live in the era of technology. Technology
+					enables people to use several things even without having detailed knowledge of their working mechanisms.
+					The rapid development of computing power and phenomenal expansion of scientific research has brought
+					many innovations and significant growth of technology. Technology has improved our living standard from
+					last few decades and now it becomes hard to imagine our life without technology. In today’s world,
+					technology is used in almost every sector. From our home to office and even to the scientific task,
+					technology is present there for our convenience.
+				</p>
+
+				<h1>Positive and negative impact of technology</h1>
+
+				<p>
+					With the increase in use of technology, there seems to have both the positive as well as negative impact
+					of technology. As known that every things have pros and cons, technology also have good aspects but the
+					fact that there are negative aspects of technology can’t be denied. Some positive as well as negative
+					impacts of technology are described below.
+				</p>
+				<br>
+				<p>
+					Technology has made a lot of positive impact in various sectors. Technology has affected the lives of
+					the people in the field of communication, education, medical, transportation and so on. It is the
+					technology because of which we are able to use mobiles phones. It is hard to imagine a day without these
+					mobile phones, email, internet and these technological stuffs. The concept of E-learning has been
+					evolved because of the technology. People are able to take various classes from all over the world
+					through the virtual medium. Likewise, technology has brought the revolutionary changes in the medical
+					sectors too. Many modern equipment has been developed that seems to be very useful for curing the
+					diseases. The medicine of fatal diseases has been invented all because of the technology. In the current
+					scenario, the vaccine of COVID-19 has been invented all because of technology. It seems complicated few
+					decades ago before the evolution of technology. Also, transportation sector is widely developed because
+					of technology. Bullet train, jet planes, super yacht are the few examples of revolutionary products
+					developed with the help of technology. Technology has made our life easier in many of these aspects.
+				</p>
+				<br>
+				<p>
+					Despite of having all these positive impacts of technology, technological experts are worried about the
+					rapid transformation in human attention because many of us were unaware about the impacts and negative
+					effects that it has brought to people and society in general. Modern technology has changed the way
+					people interact nowadays. Though technology has made people closer in virtual medium but it creates
+					social distance in real life. As a result, people are becoming confined to their homes, and do not want
+					to interact with the outside world. Privacy has also become the major issue these days. All of our data
+					and information are being tracked and recorded. With the increase in use of technology, our personal
+					information is stored in the internet and it is a subject to risk.
+				</p>
+
+				<h1>Conclusion</h1>
+
+				<p>
+					Technology is the result of human inventiveness. Technology has impact on almost everybody that has
+					access to them and it has changed the society and the way of our living. Undoubtedly technology have
+					positive impact on our lives as it really made people life simple and easier but still, we have to be
+					careful while using them because we may also suffer some negative impacts. Technology is either
+					inherently good or bad; it is how we use it that makes it so. The splitting of a hydrogen atom is
+					technology at work. As history has shown us, technology can equally be used to make a nuclear bomb that
+					kills millions - or generate electricity that lights up a million homes. It’s up to us how we use the
+					technology.
+				</p>
+			</div>
+		</div>
+
+		<!--Footer section of website containing copyright information-->
+		<footer class="copyright">
+			&copy2022 VitalBooks. All Rights Reserved.
+		</footer>
+	</body>
+</html>
