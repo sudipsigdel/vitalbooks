@@ -1,232 +1,257 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="home page of VitalBooks">
-		<meta name="keywords" content="Book Store">
-		<meta name="author" content="Sudip Sigdel">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="home page of VitalBooks" />
+    <meta name="keywords" content="Book Store" />
+    <meta name="author" content="Sudip Sigdel" />
 
-		<title>Home</title>
-		<!--favicon refers to the image that appers in left of the title-->
-		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Home</title>
+    <!--favicon refers to the image that appers in left of the title-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+      p {
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: cursive;
+      }
 
+      .home {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
 
-		<style>
-			p {
-				margin-top: 10px;
-				font-size: 20px;
-				font-family: cursive;
-			}
+      .lower {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
 
-			.home {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-evenly;
-			}
+      .lower1,
+      .lower2,
+      .lower3,
+      .lower4 {
+        flex: 0 0 calc(20%);
+        max-width: 400px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
 
-			.lower {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				gap: 20px;
-				margin-top: 20px;
-			}
+      .lower h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
 
-			.lower1, .lower2, .lower3, .lower4 {
-				flex: 0 0 calc(20%);
-				max-width: 400px;
-				background-color: #F1F1F1;
-				padding: 20px;
-				margin-bottom: 20px;
-				border-radius: 10px;
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-				text-align: center;
-			}
+      .lower p {
+        font-size: 1rem;
+        margin-top: 0;
+      }
 
-			.lower h1 {
-				font-size: 1.5rem;
-				margin-bottom: 10px;
-			}
+      .lower a {
+        text-decoration: none;
+        color: blue;
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+      }
 
-			.lower p {
-				font-size: 1rem;
-				margin-top: 0;
-			}
+      .front {
+        margin: 100px 20px 100px 20px;
+        padding: 10px;
+        width: 50%;
+        border-radius: 15px;
+        overflow-wrap: break-word;
+        background: #f5f5f5;
+      }
 
-			.lower a {
-				text-decoration: none;
-				color: blue;
-				font-weight: bold;
-				display: block;
-				margin-top: 10px;
-			}
+      .slider {
+        height: 370px;
+        width: auto;
+        margin: 50px auto;
+        overflow: hidden;
+      }
 
-			.front {
-				margin: 100px 20px 100px 20px;
-				padding: 10px;
-				width: 50%;
-				border-radius: 15px;
-				overflow-wrap: break-word;
-				background: #f5f5f5;
-			}
+      #img,
+      img {
+        width: 100%;
+        height: 95%;
+      }
 
-			.slider {
-				height: 370px;
-				width: auto;
-				margin: 50px auto;
-				overflow: hidden;
-			}
+      @media screen and (max-width: 612px) {
+        .lower1,
+        .lower2,
+        .lower3,
+        .lower4 {
+          flex-basis: 100%;
+          max-width: 80%;
+        }
 
-			#img, img {
-				width: 100%;
-				height: 95%;
-			}
+        .home {
+          flex-direction: column;
+        }
 
-			@media screen and (max-width: 768px) {
-				.lower1, .lower2, .lower3, .lower4 {
-					flex-basis: 100%;
-					max-width: 80%;
-				}
-			}
-		</style>
-	</head>
+        .front {
+          width: 90%;
+          margin: 0;
+          padding: 10px;
+          margin-top: 2rem;
+          align-self: center;
+        }
+      }
+    </style>
+  </head>
 
-	<body style="background-image: url('./images/home.jpg')">
-		<header>
-			<nav>
-				<!--This division contains logo of the website-->
-				<div>
-					<a href="index.html">
-						<img class="logo" src="images/logo.png" width="auto" height="100%">
-					</a>
-				</div>
+  <body style="background-image: url('./images/home.jpg')">
+    <header>
+      <nav>
+        <!--This division contains logo of the website-->
+        <div>
+          <a href="index.html">
+            <img
+              class="logo"
+              src="images/logo.png"
+              width="auto"
+              height="100%"
+            />
+          </a>
+        </div>
 
-				<!--This division contains javaScript that displays current date and time-->
-				<div class="date">
-					<i id="date"></i>
+        <!--This division contains javaScript that displays current date and time-->
+        <div class="date">
+          <i id="date"></i>
 
-					<script src="js/script.js">
-						display_date();
-					</script>
-				</div>
+          <script src="js/script.js">
+            display_date();
+          </script>
+        </div>
 
-				<!--Navigation Links-->
-				<div>
-					<ul>
-						<li><a class="active" href="index.html">HOME</a></li>
-						<li><a href="pages/product.html">PRODUCT</a></li>
-						<li><a href="pages/blog.html">BLOG</a></li>
-						<li><a href="pages/research.html">RESEARCH</a></li>
-						<li><a href="pages/contact.html">CONTACT US</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+        <!--Navigation Links-->
+        <div>
+          <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="pages/product.html">PRODUCT</a></li>
+            <li><a href="pages/blog.html">BLOG</a></li>
+            <li><a href="pages/research.html">RESEARCH</a></li>
+            <li><a href="pages/contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-		<div class="home">
-			<!--This division displays the introductory paragraph-->
-			<div class="front">
-				<h1 style="font-size: 40px; color: #0082e6;">VitalBooks</h1>
+    <div class="home">
+      <!--This division displays the introductory paragraph-->
+      <div class="front">
+        <h1 style="font-size: 40px; color: #0082e6">VitalBooks</h1>
 
-				<p style="color: darkgray; margin-top: 0;">
-					The online book store in the town!
-				</p>
+        <p style="color: darkgray; margin-top: 0">
+          The online book store in the town!
+        </p>
 
-				<p>
-					<b>VitalBooks</b> is one of the renouned e-commerce platform providing quality stationery goods for past
-					few years. We are Kathmandu based book store established with the motive of providing books and other
-					stationery items through online medium. But in today's date, we are not limited to valley only. We have
-					been providing our services to the whole nation.
-				</p>
-			</div>
+        <p>
+          <b>VitalBooks</b> is one of the renouned e-commerce platform providing
+          quality stationery goods for past few years. We are Kathmandu based
+          book store established with the motive of providing books and other
+          stationery items through online medium. But in today's date, we are
+          not limited to valley only. We have been providing our services to the
+          whole nation.
+        </p>
+      </div>
 
-			<!--This division allocates space for displaying image slider in home page-->
-			<div class="slider">
-				<h2 style="background-color: #0082e6; padding: 5px;">Our Best Selling Books</h2>
+      <!--This division allocates space for displaying image slider in home page-->
+      <div class="slider">
+        <h2 style="background-color: #0082e6; padding: 5px">
+          Our Best Selling Books
+        </h2>
 
-				<div id="img">
-					<img src="images/book1.jpg">
-				</div>
-			</div>
+        <div id="img">
+          <img src="images/book1.jpg" />
+        </div>
+      </div>
 
-			<!--One image is displayed in the division and JavaScript trigers after certain interval of time and image keeps changing-->
-			<script type="text/javascript">
-				let images = ['book1.jpg', 'book2.jpg', 'book3.jpg', 'book4.jpg'];
+      <!--One image is displayed in the division and JavaScript trigers after certain interval of time and image keeps changing-->
+      <script type="text/javascript">
+        let images = ["book1.jpg", "book2.jpg", "book3.jpg", "book4.jpg"];
 
-				let x = 0;
+        let x = 0;
 
-				let imgs = document.getElementById('img');
+        let imgs = document.getElementById("img");
 
-				setInterval(slider, 2000);
+        setInterval(slider, 2000);
 
-				function slider() {
-					if (x < images.length) {
-						x = x + 1;
-					}
+        function slider() {
+          if (x < images.length) {
+            x = x + 1;
+          } else {
+            x = 1;
+          }
 
-					else {
-						x = 1;
-					}
+          imgs.innerHTML = "<img src=images/" + images[x - 1] + ">";
+        }
+      </script>
+    </div>
 
-					imgs.innerHTML = "<img src=images/" + images[x - 1] + ">";
-				}
-			</script>
-		</div>
+    <!--This division creates four sections for quick navigation from bottom of the home page-->
+    <div class="lower">
+      <div class="lower1">
+        <h1>Product</h1>
 
-		<!--This division creates four sections for quick navigation from bottom of the home page-->
-		<div class="lower">
-			<div class="lower1">
-				<h1>Product</h1>
+        <p>
+          We offer a wide range of products through our store. You can order any
+          of them and we will deliver it to your doorstep.
+        </p>
 
-				<p>
-					We offer a wide range of products through our store. You can order any of them and we will deliver it to
-					your doorstep.
-				</p>
+        <a href="pages/product.html"> See More >>></a>
+      </div>
 
-				<a href="pages/product.html"> See More >>></a>
-			</div>
+      <div class="lower2">
+        <h1>Blog</h1>
 
-			<div class="lower2">
-				<h1>Blog</h1>
+        <p>
+          Technology has played a great impact in our lives. Here in this
+          section, we have discussed about its both positive and negative
+          impacts.
+        </p>
 
-				<p>
-					Technology has played a great impact in our lives. Here in this section, we have discussed about its
-					both positive and negative impacts.
-				</p>
+        <a href="pages/blog.html"> See More >>></a>
+      </div>
 
-				<a href="pages/blog.html"> See More >>></a>
-			</div>
+      <div class="lower3">
+        <h1>Research</h1>
 
-			<div class="lower3">
-				<h1>Research</h1>
+        <p>
+          In course of developing this website, a lot of things were known and
+          reference were taken. Those things are discussed here.
+        </p>
 
-				<p>
-					In course of developing this website, a lot of things were known and reference were taken. Those things
-					are discussed here.
-				</p>
+        <a href="pages/research.html"> See More >>></a>
+      </div>
 
-				<a href="pages/research.html"> See More >>></a>
-			</div>
+      <div class="lower4">
+        <h1>Contact Us</h1>
 
-			<div class="lower4">
-				<h1>Contact Us</h1>
+        <p>
+          Your suggestions are valuable for us. We would love to hear from you.
+          Kindly provide us feedback in the contact form below.
+        </p>
 
-				<p>
-					Your suggestions are valuable for us. We would love to hear from you. Kindly provide us feedback in the
-					contact form below.
-				</p>
+        <a href="pages/contact.html"> See More >>></a>
+      </div>
+    </div>
 
-				<a href="pages/contact.html"> See More >>></a>
-			</div>
-		</div>
-
-		<!--Footer section of website containing copyright information-->
-		<footer class="copyright">
-			&copy2022 VitalBooks. All Rights Reserved.
-		</footer>
-	</body>
+    <!--Footer section of website containing copyright information-->
+    <footer class="copyright">
+      &copy2022 VitalBooks. All Rights Reserved.
+    </footer>
+  </body>
 </html>
