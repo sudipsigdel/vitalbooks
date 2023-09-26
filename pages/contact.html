@@ -1,206 +1,259 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="contact page of VitalBooks">
-		<meta name="keywords" content="Book Store">
-		<meta name="author" content="Sudip Sigdel">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="contact page of VitalBooks" />
+    <meta name="keywords" content="Book Store" />
+    <meta name="author" content="Sudip Sigdel" />
 
-		<title>Contact Us</title>
-		<!--favicon refers to the image that appers in left of the title-->
-		<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <title>Contact Us</title>
+    <!--favicon refers to the image that appers in left of the title-->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
 
-		<link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
-		<style type="text/css">
-			.bg {
-				width: 100%;
-				height: fit-content;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
+    <style type="text/css">
+      .bg {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-			form {
-				background: #fff;
-				display: flex;
-				flex-direction: column;
-				padding: 1vw 4vw;
-				width: 90%;
-				max-width: 500px;
-				border-radius: 10px;
-			}
+      form {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 1vw 4vw;
+        width: 90%;
+        max-width: 500px;
+        border-radius: 10px;
+      }
 
-			form h1 {
-				color: red;
-				font-style: bold;
-				margin: 15px;
-				margin-bottom: 20px;
-				background: white;
-			}
+      form h1 {
+        color: red;
+        font-style: bold;
+        margin: 15px;
+        margin-bottom: 20px;
+        background: white;
+      }
 
-			form label,
-			textarea,
-			input {
-				border: 0;
-				margin: 10px 0;
-				padding: 10px;
-				outline: none;
-				resize: none;
-				background: #f5f5f5;
-				font-size: 16px;
-			}
+      form label,
+      textarea,
+      input {
+        border: 0;
+        margin: 10px 0;
+        padding: 10px;
+        outline: none;
+        resize: none;
+        background: #f5f5f5;
+        font-size: 16px;
+      }
 
-			form button {
-				padding: 15px;
-				background: red;
-				color: white;
-				border: 0;
-				outline: none;
-				cursor: pointer;
-				width: 150px;
-				margin: 20px auto 0;
-				border-radius: 30px;
-				margin-bottom: 20px;
-				justify-content: center;
-			}
+      form button {
+        padding: 15px;
+        background: red;
+        color: white;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        width: 150px;
+        margin: 20px auto 0;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        justify-content: center;
+      }
 
-			.about {
+      .about {
+        width: 100%;
+        height: auto;
+        color: white;
+        font-size: 20px;
+        font-family: serif;
+        background-color: black;
+        position: sticky;
+        top: 78%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
 
-				width: 100%;
-				height: auto;
-				color: white;
-				font-size: 20px;
-				font-family: serif;
-				background-color: black;
-				position: sticky;
-				top: 78%;
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-evenly;
+      td {
+        padding-left: 20px;
+        font-size: 20px;
+        text-align: left;
+      }
 
-			}
+      tr td a {
+        text-decoration: none;
+        color: white;
+      }
 
-			td {
-				padding-left: 20px;
-				font-size: 20px;
-				text-align: left;
-			}
+      tr td a:hover {
+        color: blueviolet;
+      }
 
-			tr td a {
-				text-decoration: none;
-				color: white;
-			}
+      /* Media query for screens with a maximum width of 768px */
+      @media screen and (max-width: 768px) {
+        .about div h2,
+        table,
+        div h3 {
+          padding: 10px;
+        }
+      }
 
-			tr td a:hover {
-				color: blueviolet;
-			}
-		</style>
-	</head>
+      @media screen and (max-width: 420px) {
+        .about div h2,
+        table,
+        div h3 {
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
 
-	<body>
-		<header>
-			<nav>
-				<!--This division contains logo of the website-->
-				<div>
-					<a href="../index.html">
-						<img class="logo" src="../images/logo.png" width="auto" height="100%">
-					</a>
-				</div>
+  <body>
+    <header>
+      <nav>
+        <!--This division contains logo of the website-->
+        <div>
+          <a href="../index.html">
+            <img
+              class="logo"
+              src="../images/logo.png"
+              width="auto"
+              height="100%"
+            />
+          </a>
+        </div>
 
-				<!--This division contains javaScript that displays current date and time-->
-				<div class="date">
-					<i id="date"></i>
+        <!--This division contains javaScript that displays current date and time-->
+        <div class="date">
+          <i id="date"></i>
 
-					<script src="../js/script.js">
-						display_date();
-					</script>
-				</div>
+          <script src="../js/script.js">
+            display_date();
+          </script>
+        </div>
 
-				<!--Navigation Links-->
-				<div>
-					<ul>
-						<li><a href="../index.html">HOME</a></li>
-						<li><a href="product.html">PRODUCT</a></li>
-						<li><a href="blog.html">BLOG</a></li>
-						<li><a href="research.html">RESEARCH</a></li>
-						<li><a class="active" href="contact.html">CONTACT US</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+        <!--Navigation Links-->
+        <div>
+          <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="product.html">PRODUCT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="research.html">RESEARCH</a></li>
+            <li><a class="active" href="contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-		<div class="bg">
-			<form onsubmit="validateForm()">
-				<h1>Get in touch!</h1>
+    <div class="bg">
+      <form onsubmit="validateForm()">
+        <h1>Get in touch!</h1>
 
-				<input type="text" name="fname" placeholder="First Name" required>
+        <input type="text" name="fname" placeholder="First Name" required />
 
-				<input type="text" name="lname" placeholder="Last Name" required>
+        <input type="text" name="lname" placeholder="Last Name" required />
 
-				<input type="email" name="email" placeholder="Email ID" required>
+        <input type="email" name="email" placeholder="Email ID" required />
 
-				<textarea name="msg" placeholder="Your Message" rows="5" cols="25" required></textarea>
+        <textarea
+          name="msg"
+          placeholder="Your Message"
+          rows="5"
+          cols="25"
+          required
+        ></textarea>
 
-				<button type="submit">Send</button>
-			</form>
-		</div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
 
-		<script type="text/javascript">
-			function validateForm() {
-				alert("Your message is delivered!")
-			}
-			//Only alert message is included in function because 'required' attribute is used while creating the form. So that user cannot send message without filling up all details.
-		</script>
+    <script type="text/javascript">
+      function validateForm() {
+        alert("Your message is delivered!");
+      }
+      //Only alert message is included in function because 'required' attribute is used while creating the form. So that user cannot send message without filling up all details.
+    </script>
 
-		<!--Footer section of website containing social media links, location of store in map and copyright information-->
-		<footer>
-			<div class="about">
-				<div style="padding-top: 40px; ">
+    <!--Footer section of website containing social media links, location of store in map and copyright information-->
+    <footer>
+      <div class="about">
+        <div style="padding-top: 40px">
+          <!--Table tag is used here to organise the content-->
+          <table width="50%">
+            <tr>
+              <h2 style="color: gold; padding-bottom: 15px">
+                Stay Connected with us!
+              </h2>
+            </tr>
 
-					<!--Table tag is used here to organise the content-->
-					<table width="50%">
-						<tr>
-							<h2 style="color: gold; padding-bottom: 15px;">Stay Connected with us!</h2>
-						</tr>
+            <tr>
+              <th>
+                <img src="../images/facebook.png" height="30px" width="30px" />
+              </th>
+              <td>
+                <a href="https://facebook.com/vitalbooks" target="_blank"
+                  >Facebook</a
+                >
+              </td>
+            </tr>
 
-						<tr>
-							<th><img src="../images/facebook.png" height="30px" width="30px"></th>
-							<td><a href="https://facebook.com/vitalbooks" target="_blank">Facebook</a></td>
-						</tr>
+            <tr>
+              <th>
+                <img src="../images/twitter.png" height="30px" width="30px" />
+              </th>
+              <td>
+                <a href="https://twitter.com/vitalbooks" target="_blank"
+                  >Twitter</a
+                >
+              </td>
+            </tr>
 
-						<tr>
-							<th><img src="../images/twitter.png" height="30px" width="30px"></th>
-							<td><a href="https://twitter.com/vitalbooks" target="_blank">Twitter</a></td>
-						</tr>
+            <tr>
+              <th>
+                <img src="../images/instagram.png" height="30px" width="30px" />
+              </th>
+              <td>
+                <a href="https://instagram.com/vitalbooks" target="_blank"
+                  >Instagram</a
+                >
+              </td>
+            </tr>
 
-						<tr>
-							<th><img src="../images/instagram.png" height="30px" width="30px"></th>
-							<td><a href="https://instagram.com/vitalbooks" target="_blank">Instagram</a></td>
-						</tr>
+            <tr>
+              <th>
+                <img src="../images/linkedin.png" height="30px" width="30px" />
+              </th>
+              <td>
+                <a href="https://linkedin.com/in/vitalbooks" target="_blank"
+                  >LinkedIn</a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
 
-						<tr>
-							<th><img src="../images/linkedin.png" height="30px" width="30px"></th>
-							<td><a href="https://linkedin.com/in/vitalbooks" target="_blank">LinkedIn</a></td>
-						</tr>
-					</table>
-				</div>
+        <div style="padding-top: 10px; overflow-x: hidden">
+          <h3 style="padding-bottom: 10px">We are located here⤵️</h3>
 
-				<div style="padding-top: 10px; overflow-x: hidden;">
-					<h3 style="padding-bottom: 10px;">We are located here⤵️</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.972151225969!2d25.627542314226048!3d-25.837462955436692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ea2cb105a50b999%3A0x2d791b2bfff8e370!2sVitalBooks!5e0!3m2!1sen!2snp!4v1646383523267!5m2!1sen!2snp"
+            width="600"
+            height="200"
+            style="border: 0; padding-bottom: 20px"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
 
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.972151225969!2d25.627542314226048!3d-25.837462955436692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ea2cb105a50b999%3A0x2d791b2bfff8e370!2sVitalBooks!5e0!3m2!1sen!2snp!4v1646383523267!5m2!1sen!2snp"
-						width="600" height="200" style="border:0; padding-bottom: 20px;" allowfullscreen=""
-						loading="lazy">
-					</iframe>
-				</div>
-			</div>
-
-			<div class="copyright">
-				&copy2022 VitalBooks. All Rights Reserved.
-			</div>
-		</footer>
-	</body>
+      <div class="copyright">&copy2022 VitalBooks. All Rights Reserved.</div>
+    </footer>
+  </body>
 </html>
