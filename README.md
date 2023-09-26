@@ -1,4 +1,4 @@
-#This project is a part of my Coursework at Islington College.
+## This project is a part of my Coursework at Islington College.
 
 Project Highlights:
 
