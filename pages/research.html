@@ -1,224 +1,255 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="research page of VitalBooks" />
+    <meta name="keywords" content="Book Store" />
+    <meta name="author" content="Sudip Sigdel" />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="research page of VitalBooks">
-	<meta name="keywords" content="Book Store">
-	<meta name="author" content="Sudip Sigdel">
+    <title>Research</title>
+    <!--favicon refers to the image that appers in left of the title-->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
 
-	<title>Research</title>
-	<!--favicon refers to the image that appers in left of the title-->
-	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+    <style>
+      .research {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
 
-	<style>
-		.research {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-evenly;
-		}
+      .layout {
+        width: 48%;
+        padding: 10px 0;
+      }
 
-		.layout {
-			width: 48%;
-			padding: 10px 0;
-		}
+      .contains {
+        height: auto;
+        margin-top: 25px;
+        padding: 5px;
+        background-color: lightgray;
+      }
 
-		.contains {
-			height: auto;
-			margin-top: 25px;
-			padding: 5px;
-			background-color: lightgray;
-		}
+      .research img {
+        width: 100%;
+        height: auto;
+      }
 
-		.research img {
-			width: 100%;
-			height: auto;
-		}
+      .research a {
+        text-decoration: none;
+      }
 
-		.research a {
-			text-decoration: none;
-		}
+      .research a:hover {
+        color: red;
+      }
+    </style>
+  </head>
 
-		.research a:hover {
-			color: red;
-		}
-	</style>
+  <body>
+    <header>
+      <nav>
+        <!--This division contains logo of the website-->
+        <div>
+          <a href="../index.html">
+            <img
+              class="logo"
+              src="../images/logo.png"
+              width="auto"
+              height="100%"
+            />
+          </a>
+        </div>
 
-</head>
+        <!--This division contains javaScript that displays current date and time-->
+        <div class="date">
+          <i id="date"></i>
 
-<body>
-	<header>
-		<nav>
-			<!--This division contains logo of the website-->
-			<div>
-				<a href="../index.html">
-					<img class="logo" src="../images/logo.png" width="auto" height="100%">
-				</a>
-			</div>
+          <script src="../js/script.js">
+            display_date();
+          </script>
+        </div>
 
-			<!--This division contains javaScript that displays current date and time-->
-			<div class="date">
-				<i id="date"></i>
+        <!--Navigation Links-->
+        <div>
+          <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="product.html">PRODUCT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a class="active" href="research.html">RESEARCH</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-				<script src="../js/script.js">
-					display_date();
-				</script>
-			</div>
+    <div class="research">
+      <!--This division contains the image and details of this website-->
+      <div class="layout">
+        <h1>This Website</h1>
 
-			<!--Navigation Links-->
-			<div>
-				<ul>
-					<li><a href="../index.html">HOME</a></li>
-					<li><a href="product.html">PRODUCT</a></li>
-					<li><a href="blog.html">BLOG</a></li>
-					<li><a class="active" href="research.html">RESEARCH</a></li>
-					<li><a href="contact.html">CONTACT US</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+        <!--Product Page-->
+        <div class="contains">
+          <h3>Product Page of <a href="../index.html">VitalBooks</a></h3>
 
-	<div class="research">
+          <br />
 
-		<!--This division contains the image and details of this website-->
-		<div class="layout">
-			<h1>This Website</h1>
+          <a href="product.html">
+            <img
+              src="../images/product1.png"
+              alt="product page of VitalBooks"
+            />
+          </a>
 
-			<!--Product Page-->
-			<div class="contains">
-				<h3>Product Page of <a href="../index.html">VitalBooks</a></h3>
+          <br /><br />
 
-				<br>
+          <p>
+            This is the product page of VitalBooks. The inspiration for this
+            page is from HoC Bookstore. Similar to the store section of HoC
+            Bookstore, the name and price of the books are mentioned in the
+            cards. The "Add to Cart" button is added to the product page of
+            VitalBooks whereas more details is lacking in this website.
+          </p>
+        </div>
 
-				<a href="product.html">
-					<img src="../images/product1.png" alt="product page of VitalBooks">
-				</a>
+        <!--Blog Page-->
+        <div class="contains">
+          <h3>Blog Page of <a href="../index.html">VitalBooks</a></h3>
 
-				<br><br>
+          <br />
 
-				<p>
-					This is the product page of VitalBooks. The inspiration for this page is from HoC Bookstore.
-					Similar to the store section of HoC Bookstore, the name and price of the books are mentioned in the
-					cards. The "Add to Cart" button is added to the product page of VitalBooks whereas more details is
-					lacking in this website.
+          <a href="blog.html">
+            <img src="../images/blog1.png" alt="blog page of VitalBooks" />
+          </a>
 
-				</p>
-			</div>
+          <br /><br />
 
-			<!--Blog Page-->
-			<div class="contains">
-				<h3>Blog Page of <a href="../index.html">VitalBooks</a></h3>
+          <p>
+            This is the blog page of VitalBooks. The inspiration for this page
+            is from Powell's Books. Similar to the blog section of Powell's
+            Books, the style of title and image header of the blog are
+            identical. The "Read more" section is missing in this website.
+          </p>
+        </div>
 
-				<br>
+        <!--Contact Page-->
+        <div class="contains">
+          <h3>Contact Us Page of <a href="../index.html">VitalBooks</a></h3>
 
-				<a href="blog.html">
-					<img src="../images/blog1.png" alt="blog page of VitalBooks">
-				</a>
+          <br />
 
-				<br><br>
+          <a href="contact.html">
+            <img
+              src="../images/contact1.png"
+              alt="contact us page of VitalBooks"
+            />
+          </a>
 
-				<p>
-					This is the blog page of VitalBooks. The inspiration for this page is from Powell's Books. Similar
-					to the blog section of Powell's Books, the style of title and image header of the blog are identical. The
-					"Read more" section is missing in this website.
-				</p>
-			</div>
+          <br /><br />
 
-			<!--Contact Page-->
-			<div class="contains">
-				<h3>Contact Us Page of <a href="../index.html">VitalBooks</a></h3>
+          <p>
+            This is the contact page of VitalBooks. The inspiration for this
+            page is from Million Frames. The contact form is also given
+            different touch in comparision of Million Frames. In addition to the
+            contact section of Million Frames, the social media handles and
+            location of store in map is also embedded in this website.
+          </p>
+        </div>
+      </div>
 
-				<br>
+      <!--This division contains the image and details of reference website-->
+      <div class="layout">
+        <h1>Reference Site</h1>
 
-				<a href="contact.html">
-					<img src="../images/contact1.png" alt="contact us page of VitalBooks">
-				</a>
+        <!--Product Page-->
+        <div class="contains">
+          <h3>
+            Product Page of
+            <a href="https://www.hocbookstore.com/" target="_blank"
+              >HoC Bookstore</a
+            >
+          </h3>
 
-				<br><br>
+          <br />
 
-				<p>
-					This is the contact page of VitalBooks. The inspiration for this page is from Million Frames. The
-					contact form is also given different touch in comparision of Million Frames. In
-					addition to the contact section of Million Frames, the social media handles and location of store in
-					map is also
-					embedded in this website.
-				</p>
-			</div>
-		</div>
+          <a href="https://www.hocbookstore.com/books" target="_blank">
+            <img
+              src="../images/product2.png"
+              alt="product page of HoC Bookstore"
+            />
+          </a>
 
-		<!--This division contains the image and details of reference website-->
-		<div class="layout">
-			<h1>Reference Website</h1>
+          <br /><br />
 
-			<!--Product Page-->
-			<div class="contains">
-				<h3>Product Page of <a href="https://www.hocbookstore.com/" target="_blank">HoC Bookstore</a></h3>
+          <p>
+            This is the store section of Hoc Bookstore. The picture and details
+            of the books were displayed in form of cards in this website. The
+            division containing cards is of black color and each cards has green
+            border. Here in this website, more details of the book can be
+            accessed by clicking each products card.
+          </p>
+        </div>
 
-				<br>
+        <!--Blog Page-->
+        <div class="contains">
+          <h3>
+            Blog Page of
+            <a href="https://www.powells.com/" target="_blank"
+              >Powell's Books</a
+            >
+          </h3>
 
-				<a href="https://www.hocbookstore.com/books" target="_blank">
-					<img src="../images/product2.png" alt="product page of HoC Bookstore">
-				</a>
+          <br />
 
-				<br><br>
+          <a href="https://www.powells.com/blog" target="_blank">
+            <img src="../images/blog2.png" alt="blog page of Powell's Books" />
+          </a>
 
-				<p>
-					This is the store section of Hoc Bookstore. The picture and details of the books were displayed
-					in form of cards in this website. The division containing cards is of black color and each cards
-					has green border. Here in this website, more details of the book can be accessed by clicking each
-					products card.
-				</p>
-			</div>
+          <br /><br />
 
-			<!--Blog Page-->
-			<div class="contains">
-				<h3>Blog Page of <a href="https://www.powells.com/" target="_blank">Powell's Books</a></h3>
+          <p>
+            This is the blog section of Powell's Books. In this website, the
+            blog section is designed to write more than one blogs. So there are
+            short glimpse of a lot of blogs in front page where full blogs can
+            be read by clicking "Read more" button present in each blogs.
+          </p>
+        </div>
 
-				<br>
+        <!--Contact Page-->
+        <div class="contains">
+          <h3>
+            Contact Page of
+            <a href="https://www.millionframes.com" target="_blank"
+              >Million Frames</a
+            >
+          </h3>
 
-				<a href="https://www.powells.com/blog" target="_blank">
-					<img src="../images/blog2.png" alt="blog page of Powell's Books">
-				</a>
+          <br />
 
-				<br><br>
+          <a href="https://www.millionframes.com/contact" target="_blank">
+            <img
+              src="../images/contact2.png"
+              alt="contact page of millionframes"
+            />
+          </a>
 
-				<p>
-					This is the blog section of Powell's Books. In this website, the blog section is designed to write
-					more than one blogs. So there are short glimpse of a lot of blogs in front page where full blogs can
-					be read
-					by clicking "Read more" button present in each blogs.
-				</p>
-			</div>
+          <br /><br />
 
-			<!--Contact Page-->
-			<div class="contains">
-				<h3>Contact Page of <a href="https://www.millionframes.com" target="_blank">Million Frames</a></h3>
+          <p>
+            This is the contact section of Million Frames. In this website, the
+            contact page consists of a contact form and a big footer that allows
+            user to navigate within website and social media handles to get
+            connected with company. The newsletter is also present here which is
+            missing in VitalBooks.
+          </p>
+        </div>
+      </div>
+    </div>
 
-				<br>
-
-				<a href="https://www.millionframes.com/contact" target="_blank">
-					<img src="../images/contact2.png" alt="contact page of millionframes">
-				</a>
-
-				<br><br>
-
-				<p>
-					This is the contact section of Million Frames. In this website, the contact page consists of a
-					contact form and a big footer that allows user to navigate within website and social media handles
-					to get connected with company. The newsletter is also present here which is missing in
-					VitalBooks.
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<!--Footer section of website containing copyright information-->
-	<footer class="copyright">
-		&copy2022 VitalBooks. All Rights Reserved.
-	</footer>
-</body>
-
+    <!--Footer section of website containing copyright information-->
+    <footer class="copyright">
+      &copy2022 VitalBooks. All Rights Reserved.
+    </footer>
+  </body>
 </html>
