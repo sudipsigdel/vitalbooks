@@ -37,11 +37,15 @@ nav ul li a {
 
 @media screen and (max-width: 611px) {
 
+	nav ul li {
+		margin: 0;
+
+	}
 
 	nav ul li a {
 		color: white;
 		font-size: 14px;
-		padding: 2px;
+		padding: 0 20px;
 		text-decoration: none;
 	}
 }
