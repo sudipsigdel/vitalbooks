@@ -81,9 +81,8 @@ a:hover {
 	text-align: center;
 	width: 100%;
 	font-size: 18px;
-	position: relative;
+	position: fixed;
 	bottom: 0;
-	left: 0;
 }
 
 /*-------X-------Copyright-------X-------*/
